@@ -1,4 +1,4 @@
-//Find the frequency of elements in an Array
+//Find the frequency of elements in an Array(optimized in Hashmap)
 
 import java.util.*;
 class Frequence_ele{
