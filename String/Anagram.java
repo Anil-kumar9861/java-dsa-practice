@@ -16,11 +16,6 @@ class Anagram{
         Arrays.sort(arr2);
 
 
-            for(char c: arr2){
-                System.out.print(c+"");
-            }
-
-
         if(Arrays.equals(arr1,arr2)){
             System.out.print("It is an Anagram");
         }else{
