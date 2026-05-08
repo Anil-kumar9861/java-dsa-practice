@@ -23,35 +23,45 @@ class Reverse{
 
         int size=0;
 
-        while(node.next!= null){
+        System.out.print("Original:");
+
+        while(node!= null){
+            System.out.print(" "+node.data);
             node=node.next;
-            size++;
+            
         }
 
 
-            int arr[]= new int[size+1];
+        Node next=null;
+        Node curr= head;
+        Node prev=null;
 
 
-            Node node1=head;
-            int i=0;
+        while(curr != null){
 
-             for(int j=0;j<size;j++){
-                arr[i]=node1.data;
-                node1=node1.next;
-                i++;
+            next=curr.next;
+
+            curr.next=prev;
+
+            prev=curr;
+
+            curr=next;
+
+
+        }
+
+
+        head=prev;
+
+
+        System.out.print("Reverse:");
+
+        while(head!= null){
+            System.out.print(" "+head.data);
+            head=head.next;
             
-            }
-
-
-            for(int a:arr){
-                System.out.print(" "+a);
-            }
-
-
-          //the resvere the array ok
-
-
-
+        }
+       
 
     }
 }
