@@ -30,10 +30,3 @@ alter table employee alter column age set default 10;
         ----+------------+------------+---------+-----
         1 | Anil Kumar | 2101289397 | BBSR    |
         2 | Suni Kumar | 2101289398 | CUT     |  10
-
-
-
-
-
-	
-		
