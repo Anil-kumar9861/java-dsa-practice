@@ -192,7 +192,6 @@ select max(age) from employee;
 			 			     2
 -- Having
 
-
 		select age from employee group by age having age<=10;
 							   age
 							  -----
